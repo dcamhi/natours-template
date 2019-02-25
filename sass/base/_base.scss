@@ -24,12 +24,16 @@ html{
     }
 }
 
-body {
-    box-sizing: border-box;
-    padding: 3rem;
+    body {
+        box-sizing: border-box;
+        padding: 3rem;
 
-    @include respond(tablet-land){
-        padding: 0;
+        @include respond(tablet-land){
+            padding: 0;
     }
-
+    
+    ::selection {
+        background-color: $color-primary;
+        color: $color-white;
+    }
 }
